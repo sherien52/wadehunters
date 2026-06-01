@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>웨이드 헌터 세계관/등장인물</title>
+<title>웨이드 헌터 세계관</title>
 
 <style>
 body {
-    font-family: "Malgun Gothic", sans-serif;
     margin: 0;
+    background: #ffffff;
     color: #202122;
-    background-color: #ffffff;
+    font-family: "Malgun Gothic", sans-serif;
     line-height: 1.8;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 .toc {
-    width: 220px;
+    width: 240px;
     flex-shrink: 0;
 
     position: sticky;
@@ -33,7 +33,7 @@ body {
     padding: 15px;
 
     border: 1px solid #a2a9b1;
-    background-color: #f8f9fa;
+    background: #f8f9fa;
 }
 
 .toc-title {
@@ -43,17 +43,17 @@ body {
 
 .toc ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 15px;
     margin: 0;
 }
 
 .toc li {
-    margin-bottom: 8px;
+    margin: 6px 0;
 }
 
 .toc a {
-    color: #0645ad;
     text-decoration: none;
+    color: #0645ad;
 }
 
 .toc a:hover {
@@ -69,17 +69,22 @@ body {
 h1 {
     border-bottom: 3px solid #36c;
     padding-bottom: 10px;
-    margin-top: 0;
 }
 
 h2 {
     border-bottom: 1px solid #a2a9b1;
     padding-bottom: 5px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-.intro {
-    margin-bottom: 40px;
+.wiki-link {
+    color: #0645ad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wiki-link:hover {
+    text-decoration: underline;
 }
 
 .character-list {
@@ -87,158 +92,235 @@ h2 {
 }
 
 .character-list li {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
 .character-name {
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-weight: bold;
-}
-
-.character-name a {
-    color: #0645ad;
-    text-decoration: none;
-}
-
-.character-name a:hover {
-    text-decoration: underline;
 }
 
 .description {
     margin-top: 4px;
 }
-</style>
 
+.notice-box {
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+    padding: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+</style>
 </head>
 
 <body>
 
 <div class="layout">
 
+    <!-- 좌측 목차 -->
     <nav class="toc">
+
         <div class="toc-title">목차</div>
 
         <ul>
-            <li><a href="#overview">1. 개요</a></li>
-            <li><a href="#wade-family">2. 웨이드 가문</a></li>
+            <li>
+                <a href="#overview">1. 개요</a>
+            </li>
+
+            <li>
+                <a href="#system">2. 시스템 설정</a>
+                <ul>
+                    <li>
+                        <a href="system_description.html">
+                        2.1 상세 문서
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#guilds">3. 주요 길드</a>
+                <ul>
+                    <li>
+                        <a href="guilds_description.html">
+                        3.1 상세 문서
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#wade-family">4. 웨이드 가문</a>
+            </li>
+
+            <li>
+                <a href="#world-setting">5. 세계관 설정</a>
+            </li>
         </ul>
+
     </nav>
 
-    <div class="content">
+    <!-- 본문 -->
+    <main class="content">
 
-        <h1 id="overview">웨이드 헌터 세계관/등장인물</h1>
+        <h1 id="overview">웨이드 헌터 세계관</h1>
 
-        <div class="intro">
-            <p>
-                웨이드 헌터 세계관은 현대 사회와 던전, 각성자, 헌터가 공존하는 시대를 배경으로 하는 창작 세계관이다.
-            </p>
+        <p>
+            웨이드 헌터 세계관은 현대 사회와 던전, 각성자(Awakened), 헌터(Hunter)가 공존하는 시대를 배경으로 하는 창작 세계관이다.
+        </p>
 
-            <p>
-                본 문서는 웨이드 가문을 중심으로 등장하는 주요 인물들을 정리한 문서로, 각 캐릭터의 배경과 성격, 관계 및 설정을 확인할 수 있다.
-            </p>
+        <p>
+            본 문서는 세계관의 주요 설정과 단체, 등장인물 정보를 정리한 위키 문서로서 작성되었다.
+        </p>
 
-            <p>
-                등장인물의 이름을 클릭하면 해당 캐릭터의 상세 프로필 페이지로 이동한다.
-            </p>
+        <p>
+            각 문서의 링크를 통해 상세 설정을 확인할 수 있다.
+        </p>
+
+        <!-- 시스템 설정 -->
+
+        <h2 id="system">2. 시스템 설정</h2>
+
+        <p>
+            각성, 등급 체계, 마력(Mana), 던전(Dungeon), 스킬(Skill) 및 헌터 시스템에 관한 설명이다.
+        </p>
+
+        <div class="notice-box">
+            <a class="wiki-link" href="system_description.html">
+            ▶ 시스템 설정 문서 바로가기
+            </a>
         </div>
 
-        <h2 id="wade-family">웨이드 가문</h2>
+        <!-- 주요 길드 -->
+
+        <h2 id="guilds">3. 주요 길드</h2>
+
+        <p>
+            세계 각국에서 활동하는 헌터 길드와 그 구성원들에 대한 설명이다.
+        </p>
+
+        <div class="notice-box">
+            <a class="wiki-link" href="guilds_description.html">
+            ▶ 주요 길드 문서 바로가기
+            </a>
+        </div>
+
+        <!-- 웨이드 가문 -->
+
+        <h2 id="wade-family">4. 웨이드 가문</h2>
+
+        <p>
+            웨이드 길드(Wade Guild)를 중심으로 활동하는 웨이드 가문의 주요 구성원들이다.
+        </p>
 
         <ul class="character-list">
 
             <li>
                 <div class="character-name">
-                    <a href="01-timothy.html">티모시 아이브 웨이드</a>
+                    <a class="wiki-link" href="01-timothy.html">티모시 아이브 웨이드</a>
                 </div>
                 <div class="description">
-                    웨이드 가문의 장남. 냉철한 판단력과 강한 책임감을 지닌 헌터로, 가문의 중심축 역할을 맡고 있다.
+                    웨이드 길드의 길드장이자 웨이드 가문의 중심 인물.
                 </div>
             </li>
 
             <li>
                 <div class="character-name">
-                    <a href="02-pelisha.html">펠리사 에라토 웨이드</a>
+                    <a class="wiki-link" href="02-pelisha.html">펠리사 에라토 웨이드</a>
                 </div>
                 <div class="description">
-                    지성과 통찰력을 겸비한 인물. 웨이드 가문 내에서도 독특한 존재감을 가진다.
+                    티모시의 배우자.
                 </div>
             </li>
 
             <li>
                 <div class="character-name">
-                    <a href="03-caelum.html">게일럼 엘리아스 웨이드</a>
+                    <a class="wiki-link" href="03-caelum.html">게일럼 엘리아스 웨이드</a>
                 </div>
                 <div class="description">
-                    뛰어난 재능을 가진 헌터. 자신의 신념을 위해 행동하는 성향이 강하다.
+                    웨이드 가문의 장남.
                 </div>
             </li>
 
             <li>
                 <div class="character-name">
-                    <a href="04-quincy.html">퀸시 아이븐 웨이드</a>
+                    <a class="wiki-link" href="04-quincy.html">퀸시 아이븐 웨이드</a>
                 </div>
                 <div class="description">
-                    침착하면서도 전략적인 사고를 가진 인물. 위기 상황에서 진가를 발휘한다.
+                    웨이드 가문의 차남.
                 </div>
             </li>
 
             <li>
                 <div class="character-name">
-                    <a href="05-nisha.html">니샤 벨라 웨이드</a>
+                    <a class="wiki-link" href="05-nisha.html">니샤 벨라 웨이드</a>
                 </div>
                 <div class="description">
-                    자유로운 성격과 강한 개성을 지닌 인물. 가문 내에서도 독보적인 존재다.
+                    웨이드 가문의 장녀.
                 </div>
             </li>
 
             <li>
                 <div class="character-name">
-                    <a href="06-cain.html">가인 이그니스 웨이드</a>
+                    <a class="wiki-link" href="06-cain.html">가인 이그니스 웨이드</a>
                 </div>
                 <div class="description">
-                    강인한 전투 능력을 보유한 헌터. 행동력이 뛰어나며 위험을 두려워하지 않는다.
+                    웨이드 가문의 삼남.
                 </div>
             </li>
 
             <li>
                 <div class="character-name">
-                    <a href="07-ahimsa.html">아힘사 웨이드</a>
+                    <a class="wiki-link" href="07-ahimsa.html">아힘사 웨이드</a>
                 </div>
                 <div class="description">
-                    독특한 가치관을 가진 인물. 타인과는 다른 방식으로 세상을 바라본다.
+                    웨이드 가문의 차녀.
                 </div>
             </li>
 
             <li>
                 <div class="character-name">
-                    <a href="08-diony.html">디오니 웨이드</a>
+                    <a class="wiki-link" href="08-diony.html">디오니 웨이드</a>
                 </div>
                 <div class="description">
-                    활발하고 사교적인 성격의 소유자. 다양한 인맥과 정보를 활용하는 데 능하다.
+                    웨이드 가문의 삼녀.
                 </div>
             </li>
 
             <li>
                 <div class="character-name">
-                    <a href="09-liberto.html">리베르토 모리 웨이드</a>
+                    <a class="wiki-link" href="09-liberto.html">리베르토 모리 웨이드</a>
                 </div>
                 <div class="description">
-                    강한 신념과 카리스마를 가진 인물. 주변 사람들에게 큰 영향을 끼친다.
+                    웨이드 가문의 사남.
                 </div>
             </li>
 
             <li>
                 <div class="character-name">
-                    <a href="10-rhiannon.html">리아논 니케 웨이드</a>
+                    <a class="wiki-link" href="10-rhiannon.html">리아논 니케 웨이드</a>
                 </div>
                 <div class="description">
-                    웨이드 가문의 막내. 뛰어난 잠재력과 예측하기 어려운 면모를 가지고 있다.
+                    웨이드 가문의 막내.
                 </div>
             </li>
 
         </ul>
 
-    </div>
+        <!-- 세계관 설정 -->
+
+        <h2 id="world-setting">5. 세계관 설정</h2>
+
+        <p>
+            게이트 출현 이후 변화한 사회 구조와 국제 정세, 국가별 헌터 세력, 마력 기술의 발전 등을 다루는 설정 문서이다.
+        </p>
+
+        <p>
+            현재 추가 작성 중.
+        </p>
+
+    </main>
 
 </div>
 
