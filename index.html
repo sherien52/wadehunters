@@ -8,28 +8,78 @@
 <style>
 body {
     font-family: "Malgun Gothic", sans-serif;
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-    line-height: 1.8;
+    margin: 0;
     color: #202122;
     background-color: #ffffff;
+    line-height: 1.8;
+}
+
+.layout {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.toc {
+    width: 220px;
+    flex-shrink: 0;
+
+    position: sticky;
+    top: 20px;
+
+    height: fit-content;
+
+    margin: 30px 20px;
+    padding: 15px;
+
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+}
+
+.toc-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin-bottom: 8px;
+}
+
+.toc a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    max-width: 1000px;
+    padding: 30px;
 }
 
 h1 {
     border-bottom: 3px solid #36c;
     padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-.intro {
-    margin-bottom: 40px;
+    margin-top: 0;
 }
 
 h2 {
     border-bottom: 1px solid #a2a9b1;
-    margin-top: 40px;
     padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+.intro {
+    margin-bottom: 40px;
 }
 
 .character-list {
@@ -56,124 +106,141 @@ h2 {
 
 .description {
     margin-top: 4px;
-    color: #202122;
 }
 </style>
 
 </head>
+
 <body>
 
-<h1>웨이드 헌터 세계관/등장인물</h1>
+<div class="layout">
 
-<div class="intro">
-<p>
-웨이드 헌터 세계관은 현대 사회와 던전, 각성자, 헌터가 공존하는 시대를 배경으로 하는 창작 세계관이다.
-</p>
+    <nav class="toc">
+        <div class="toc-title">목차</div>
 
-<p>
-본 문서는 웨이드 가문을 중심으로 등장하는 주요 인물들을 정리한 문서로, 각 캐릭터의 기본 정보와 특징을 확인할 수 있다.
-</p>
+        <ul>
+            <li><a href="#overview">1. 개요</a></li>
+            <li><a href="#wade-family">2. 웨이드 가문</a></li>
+        </ul>
+    </nav>
 
-<p>
-인물 이름을 클릭하면 해당 캐릭터의 상세 프로필 페이지로 이동한다.
-</p>
-</div>
+    <div class="content">
 
-<h2>웨이드 가문</h2>
+        <h1 id="overview">웨이드 헌터 세계관/등장인물</h1>
 
-<ul class="character-list">
+        <div class="intro">
+            <p>
+                웨이드 헌터 세계관은 현대 사회와 던전, 각성자, 헌터가 공존하는 시대를 배경으로 하는 창작 세계관이다.
+            </p>
 
-<li>
-<div class="character-name">
-<a href="01-timothy.html">티모시 아이브 웨이드</a>
-</div>
-<div class="description">
-웨이드 가문의 장남. 냉철한 판단력과 강한 책임감을 지닌 헌터로, 가문을 이끄는 중심 인물이다.
-</div>
-</li>
+            <p>
+                본 문서는 웨이드 가문을 중심으로 등장하는 주요 인물들을 정리한 문서로, 각 캐릭터의 배경과 성격, 관계 및 설정을 확인할 수 있다.
+            </p>
 
-<li>
-<div class="character-name">
-<a href="02-pelisha.html">펠리사 에라토 웨이드</a>
-</div>
-<div class="description">
-지성과 통찰력을 겸비한 인물. 웨이드 가문 내에서도 독특한 존재감을 가진다.
-</div>
-</li>
+            <p>
+                등장인물의 이름을 클릭하면 해당 캐릭터의 상세 프로필 페이지로 이동한다.
+            </p>
+        </div>
 
-<li>
-<div class="character-name">
-<a href="03-caelum.html">게일럼 엘리아스 웨이드</a>
-</div>
-<div class="description">
-뛰어난 재능을 가진 헌터. 자신의 신념을 위해 행동하는 성향이 강하다.
-</div>
-</li>
+        <h2 id="wade-family">웨이드 가문</h2>
 
-<li>
-<div class="character-name">
-<a href="04-quincy.html">퀸시 아이븐 웨이드</a>
-</div>
-<div class="description">
-침착하면서도 전략적인 사고를 가진 인물. 위기 상황에서 진가를 발휘한다.
-</div>
-</li>
+        <ul class="character-list">
 
-<li>
-<div class="character-name">
-<a href="05-nisha.html">니샤 벨라 웨이드</a>
-</div>
-<div class="description">
-자유로운 성격과 강한 개성을 지닌 인물. 가문 내에서도 독보적인 존재다.
-</div>
-</li>
+            <li>
+                <div class="character-name">
+                    <a href="01-timothy.html">티모시 아이브 웨이드</a>
+                </div>
+                <div class="description">
+                    웨이드 가문의 장남. 냉철한 판단력과 강한 책임감을 지닌 헌터로, 가문의 중심축 역할을 맡고 있다.
+                </div>
+            </li>
 
-<li>
-<div class="character-name">
-<a href="06-cain.html">가인 이그니스 웨이드</a>
-</div>
-<div class="description">
-강인한 전투 능력을 보유한 헌터. 행동력이 뛰어나며 위험을 두려워하지 않는다.
-</div>
-</li>
+            <li>
+                <div class="character-name">
+                    <a href="02-pelisha.html">펠리사 에라토 웨이드</a>
+                </div>
+                <div class="description">
+                    지성과 통찰력을 겸비한 인물. 웨이드 가문 내에서도 독특한 존재감을 가진다.
+                </div>
+            </li>
 
-<li>
-<div class="character-name">
-<a href="07-ahimsa.html">아힘사 웨이드</a>
-</div>
-<div class="description">
-독특한 가치관을 가진 인물. 타인과는 다른 방식으로 세상을 바라본다.
-</div>
-</li>
+            <li>
+                <div class="character-name">
+                    <a href="03-caelum.html">게일럼 엘리아스 웨이드</a>
+                </div>
+                <div class="description">
+                    뛰어난 재능을 가진 헌터. 자신의 신념을 위해 행동하는 성향이 강하다.
+                </div>
+            </li>
 
-<li>
-<div class="character-name">
-<a href="08-diony.html">디오니 웨이드</a>
-</div>
-<div class="description">
-활발하고 사교적인 성격의 소유자. 다양한 인맥과 정보를 활용하는 데 능하다.
-</div>
-</li>
+            <li>
+                <div class="character-name">
+                    <a href="04-quincy.html">퀸시 아이븐 웨이드</a>
+                </div>
+                <div class="description">
+                    침착하면서도 전략적인 사고를 가진 인물. 위기 상황에서 진가를 발휘한다.
+                </div>
+            </li>
 
-<li>
-<div class="character-name">
-<a href="09-liberto.html">리베르토 모리 웨이드</a>
-</div>
-<div class="description">
-강한 신념과 카리스마를 가진 인물. 주변 사람들에게 큰 영향을 끼친다.
-</div>
-</li>
+            <li>
+                <div class="character-name">
+                    <a href="05-nisha.html">니샤 벨라 웨이드</a>
+                </div>
+                <div class="description">
+                    자유로운 성격과 강한 개성을 지닌 인물. 가문 내에서도 독보적인 존재다.
+                </div>
+            </li>
 
-<li>
-<div class="character-name">
-<a href="10-rhiannon.html">리아논 니케 웨이드</a>
-</div>
-<div class="description">
-웨이드 가문의 막내. 뛰어난 잠재력과 예측하기 어려운 면모를 가지고 있다.
-</div>
-</li>
+            <li>
+                <div class="character-name">
+                    <a href="06-cain.html">가인 이그니스 웨이드</a>
+                </div>
+                <div class="description">
+                    강인한 전투 능력을 보유한 헌터. 행동력이 뛰어나며 위험을 두려워하지 않는다.
+                </div>
+            </li>
 
-</ul>
+            <li>
+                <div class="character-name">
+                    <a href="07-ahimsa.html">아힘사 웨이드</a>
+                </div>
+                <div class="description">
+                    독특한 가치관을 가진 인물. 타인과는 다른 방식으로 세상을 바라본다.
+                </div>
+            </li>
+
+            <li>
+                <div class="character-name">
+                    <a href="08-diony.html">디오니 웨이드</a>
+                </div>
+                <div class="description">
+                    활발하고 사교적인 성격의 소유자. 다양한 인맥과 정보를 활용하는 데 능하다.
+                </div>
+            </li>
+
+            <li>
+                <div class="character-name">
+                    <a href="09-liberto.html">리베르토 모리 웨이드</a>
+                </div>
+                <div class="description">
+                    강한 신념과 카리스마를 가진 인물. 주변 사람들에게 큰 영향을 끼친다.
+                </div>
+            </li>
+
+            <li>
+                <div class="character-name">
+                    <a href="10-rhiannon.html">리아논 니케 웨이드</a>
+                </div>
+                <div class="description">
+                    웨이드 가문의 막내. 뛰어난 잠재력과 예측하기 어려운 면모를 가지고 있다.
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
 
 </body>
 </html>
